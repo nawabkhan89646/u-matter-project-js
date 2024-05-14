@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url("../../Images/breathing-scene1.jpg"); */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../Images/breathing-scene1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+}
+
+.circle {
+    background: conic-gradient(
+    #1A4D2E 0%,
+    #1A4D2E 40%,
+    rgb(227, 236, 139) 40%,
+    rgb(227, 236, 139) 60%,
+    #ACE1AF 60%,
+    #ACE1AF 100%
+  );
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.inner-circle {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.pointer {
+    animation: rotatePointer 7.5s linear forwards infinite; /* Adjust duration and timing function as needed */
+}
+
+@keyframes rotatePointer {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* @keyframes  */
