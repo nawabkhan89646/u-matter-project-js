@@ -6,7 +6,6 @@
 
 body {
     /* background-image: url("homepage.jpg"); */
-    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/landing\ \(1\).jpg); */
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/landing\ page.jpg);
     background-repeat: no-repeat;
     background-position: center;
