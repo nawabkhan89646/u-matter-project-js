@@ -1,19 +1,24 @@
-const url = 'https://spotify23.p.rapidapi.com/search/?q=%3CREQUIRED%3E&type=multi&offset=0&limit=10&numberOfTopResults=5';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'b91acf5cc7mshb7020959cc252bcp1e6389jsnb1ab907b1b6e',
-		'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-	}
-};
+document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('search-input');
+    const musicList = document.querySelectorAll('.musics');
 
-fetch(url, options)
-.then((data) => {
-    data.json();
-})
-.then((data) => {
-    console.log(data);
-})
-.catch((err) => {
-    console.log(err);
-})
+    searchInput.addEventListener('input', function () {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        musicList.forEach(function (music) {
+            const musicTitle = music.dataset.title.toLowerCase();
+            if (musicTitle.includes(searchTerm)) {
+                music.style.display = 'block';
+            } else {
+                music.style.display = 'none';
+            }
+        });
+    });
+});
+
+const navbar = document.querySelector('.nav-bar'); // Corrected selector
+const toggleButton = document.getElementById('toggle-button');
+
+toggleButton.addEventListener('click', () => {
+    navbar.classList.toggle('acti');
+});
