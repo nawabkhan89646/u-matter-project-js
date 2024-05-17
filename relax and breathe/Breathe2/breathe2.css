@@ -6,7 +6,6 @@
 
 body {
     /* background-image: url("../../Images/breathing-scene1.jpg"); */
-    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../Images/breathing-scene2.jpg); */
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../Images/breathing-scene2.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -39,6 +38,37 @@ body {
 @keyframes rotatePointer {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.circle-animation {
+    animation: expandCircle 19s infinite linear;
+}
+
+.inner-circle-animation {
+    animation: decreaseCircle 19s infinite linear;
+}
+
+/* Additional styles for inner-circle */
+.inner-circle {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* .breathe-in {
+    animation: breatheInAnimate 7500ms infinite ;
+} */
+
+@keyframes expandCircle {
+    0% { transform: scale(1); }
+    21% { transform: scale(1.2); }
+    58% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes decreaseCircle {
+    0% { transform: scale(1); }
+    21% { transform: scale(0.7); }
+    58% { transform: scale(0.7); }
+    100% { transform: scale(1); }
 }
 
 /* @keyframes  */

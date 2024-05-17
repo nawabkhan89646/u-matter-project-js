@@ -19,9 +19,9 @@ body {
     background: rgba(255, 255, 255, 0.3);
 }
 
-.scene {
-    /* background-image: url("https://umatter.netlify.app/images/music-images/nature-instrument/healing%20water.jpg"); */
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://umatter.netlify.app/images/scene/photos/lake-sunset.jpg);
+/* .scene {
+    background-image: url("https://umatter.netlify.app/images/music-images/nature-instrument/healing%20water.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Images/scene-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -31,6 +31,14 @@ body {
 
 .scene:hover {
     transform: scale(1.02);
+}
+
+.scene-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Images/scene-1.jpg);
+} */
+
+#play-btn {
+    transition: all 300ms;
 }
 
 /* .scene-name {
